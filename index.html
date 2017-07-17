@@ -1,0 +1,114 @@
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+					<meta charset="UTF-8">
+
+					
+
+					<title>CrystalsCollector Game </title>
+					
+					<!--Tried using bootstrap for jumbotron, but when I do my background image and color disappears...
+
+					<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+
+					<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+					<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+					
+
+					
+			</head>
+
+				<body>
+				
+					<!--bootstrap not working properly...
+						<div class="jumbotron">-->
+
+							<h1>Crystals Collector</h1>	
+
+					<!-- Player Instructions: Unordered list-->
+					<p>
+					<h2> How to Play </h2>
+
+					<ul style="list-style-type: none">
+						<li>You will be given a random number at the start of the game.</li>
+
+						<li>There are 4 crystals, each with a different value.</li>
+							<ul style="list-style-type: none">
+								<li id="red">RED</li>
+								<li id="green">GREEN</li>
+								<li id="purple">PURPLE</li>
+								<li id="red">YELLOW</li>
+							</ul>
+					
+						<li>Click a crystal to add points to your score.</li>
+
+						<li>Match the random number to WIN the game!</li>
+
+						<li>Score above the random number and you LOSE.</li>
+
+						<li>The value of each crystal is hidden from you until you click on it.</li>
+
+						<li>The value of each crystal changes at the start off each game!</li>
+
+					</ul>
+
+					</p>
+
+
+
+
+					<!--Set the random number-->
+
+
+					<div class="matchNumber">
+						<h2>Match This Number:</h2>
+						<id="randomNumber">
+					</div>
+
+				
+
+					<!--Crystals-->
+
+					<div class="crystals">
+
+						<img id="redGem" src="assets/images/red-gem.png" alt="Red Gem" style="width:250px;height:250px;">
+
+						<img id="greenGem" src="assets/images/green-gem.png" alt="Green Gem" style="width:250px;height:250px;">
+
+						<img id="purpleGem" src="assets/images/purple-gem.png" alt="Purple Gem" style="width:250px;height:250px;">
+
+						<img id="yellowGem" src="assets/images/yellow-gem.png" alt="Yellow Gem" style="width:250px;height:250px;">
+
+					</div>
+
+					
+
+
+					<!--Calculate scores. -->
+
+
+
+					<div class="totalScores">
+
+						<h2 id="totalWins">Wins</h2>
+						
+
+						<h2 id="totalLosses">Losses</h2>
+				
+
+					</div>
+
+
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+					<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+				</body>
+
+
+				
+			</html>
